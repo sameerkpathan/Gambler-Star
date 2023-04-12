@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambler Star</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <marquee  width="100%" hight="100px" direction="right">Welcome to Gambling World </marquee>
+    </div>
+    <div id="main">
+        <div id="eligibility">
+            <h2>Enter Your Birth Date</h2>
+            <input id="bithdate" type="date" />
+            <button onclick="checkAge()">Click Here to Check Your Eligibility </button>
+            <span id="Age"></span>
+        </div>
+
+        <div id="gambling" class="blurry">
+            <h2>
+                Select Number in between 1 to 10
+            </h2>
+            <input placeholder="Enter Value Here" type="number" min="1" max="10" id="number" oninput="checkRightVal()" />
+
+            <span id="errorMessage"></span>
+            <button id="btn" onclick="play()"> Click Me </button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./confetty.js"></script>
+</body>
+
+</html>
